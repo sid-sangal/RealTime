@@ -20,7 +20,9 @@ Steps:
 
 @Time stamp 7/16
 
-After 3 attempts of building the project it have reached a point of training the model with the error being that the model expects a 3D or 4D input numpy array but recieves a 2D one.
+After 3 attempts of building the project I have reached a point of training the model with the error being that the model expects a 3D or 4D input numpy array but recieves a 2D one.
 
 The error according to online search is due to the input file format not being in JPEG. Which is not the case here. The suspected problem is due to there being multile boundign boxes in the trainign image and the corresponding xml files. I will be training a new model with a new dataset and xml files with only one bounding boxes and updating the proper documentation for the same.
+
+Step 1: Downloading data from Kaggle: 
 
