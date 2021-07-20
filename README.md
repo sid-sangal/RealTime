@@ -27,3 +27,6 @@ The error according to online search is due to the input file format not being i
 
 Step 1: Downloading data from Kaggle: 
 
+
+@Time stamp 7/20 
+
