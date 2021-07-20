@@ -1,4 +1,5 @@
 # RealTime
+Machinve vision project. An open source library based attempt the replication of NI LabView and Adaptive Vision Studio modules
 Real-time object detection using Python, Tensorflow, OpenCV.
 
 7/9/21
