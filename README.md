@@ -56,4 +56,20 @@ Step 3: sourcing the datset: I previously attempted to create my own dataset but
 
 Step 4: For ease of access, the dataset will be mounted on cloud. As uploading such a big dataset for every instace of Colab could be a hassle(the VM has crashed due to unknown reasons multiple times in the past) it makes sense to mount the developer's Google drive for this application. The steps are quite simple and will be eexplained in the colab window or the Ipynb.
 
-Step 5: 
+Step 5: Creating the labels for the images. Each image contains one face with one bounding box and the .txt files have bee ngenerated using ""
+
+Step 6: Train/test split: Since the dataset is large enough, I am splitting it into 90:10 (Train:test)
+
+Step 7: After mounting the drive, making changes to the config file and splitting the train, test files into appropriate folders and providing file path variables for all necessary directories( it is a good practice to provide path variables to make the code look cleaner and easier to debug)
+
+Step 8: We are now close to the training phase. We will now build our Yolo model using the !make command and import the existing weights from the repository. We are not trainig the weights from scratch but rather performing transfer learning as the time required and scope for error is quite large and unnecessary. The model has been previously trained on the famous MSCOCO dataset and is ver ywell generalized on day-to-day objects. We will be retraining these weights for our application on th edataset containing faces with labels mask and no_mask.
+
+Step 9: We now begin the training of the model by using the command: !./darknet detector train data/obj.data cfg/yolov4-custom.cfg yolov4.conv.137 -dont_show -map
+
+We can visualize the loss graph using the cv2 library and plot the average loss value at every 100 iterations. This will only work for uninterrupted training.
+
+Step 10: Train the model. Finally!!!! The model has been started for training and the documentation till this point has been updated.
+
+@Time Stamp: 3:45 pm The training has been started.
+
+@Time stamp: 5:12 pm Th etraining has reached step 980 wit hthe current loss value being 2.31. At the current pace, it would take approximately 5 more hours for the training to finish or the loss curve to reach an asymptotic behaviour.
