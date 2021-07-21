@@ -3,6 +3,7 @@ Machinve vision project. An open source library based attempt the replication of
 Real-time object detection using Python, Tensorflow, OpenCV.
 
 @@@ All sources have been linked and steps have been mentioned along with SOTA research papers for reference. 
+
 $$$ All softwares, datasets, libraries, frameworks, etc are opensource and can be replicated by anyone.
 
 7/10/21
