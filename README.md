@@ -73,4 +73,7 @@ Step 10: Train the model. Finally!!!! The model has been started for training an
 
 @Time Stamp: 3:45 pm The training has been started.
 
-@Time stamp: 5:12 pm Th etraining has reached step 980 wit hthe current loss value being 2.31. At the current pace, it would take approximately 5 more hours for the training to finish or the loss curve to reach an asymptotic behaviour.
+@Time stamp: 5:12 pm The training has reached step 980 wit hthe current loss value being 2.31. At the current pace, it would take approximately 5 more hours for the training to finish or the loss curve to reach an asymptotic behaviour.
+
+@Time stamp 6 pm. Accuracy; 90.29%
+
