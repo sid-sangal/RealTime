@@ -2,7 +2,10 @@
 Machinve vision project. An open source library based attempt the replication of NI LabView and Adaptive Vision Studio modules
 Real-time object detection using Python, Tensorflow, OpenCV.
 
-7/9/21
+@@@ All sources have been linked and steps have been mentioned along with SOTA research papers for reference. 
+$$$ All softwares, datasets, libraries, frameworks, etc are opensource and can be replicated by anyone.
+
+7/10/21
 This project is inspired by multiple YouTube videos and docunentation that will be posted in appropriate locations in this file
 
 *** One of the things that I am looking forward to most is to make a video explanation of the build and implementation of this project because I personally tend to
@@ -16,7 +19,7 @@ This project uses transfer learning techniques usiing the MobileNest SSD or sing
 Steps:
 
 1. Downloading and labeling dataset
-2. Transfer Learning Using MobileNet SSD
+2. Transfer Learning Using YoloV4 and YoloV4-tiny
 3. Real time detection(webcam) using OpenCV
 
 @Time stamp 7/16
@@ -25,8 +28,32 @@ After 3 attempts of building the project I have reached a point of training the 
 
 The error according to online search is due to the input file format not being in JPEG. Which is not the case here. The suspected problem is due to there being multile boundign boxes in the trainign image and the corresponding xml files. I will be training a new model with a new dataset and xml files with only one bounding boxes and updating the proper documentation for the same.
 
-Step 1: Downloading data from Kaggle: 
+The following few days will be spent on learning and reading about various architecturesand available documentation for the models.
+
+@Time stamp 7/21
+
+The project will be implemented on Google Colab instead of locally using CUDA and CUDNN because of the numerous version incompatability errors. Although the project is taking a different route for now, the local implementation will still be performed as a separate project.
+
+Sources used: 
+1. https://medium.com/analytics-vidhya/yolov4-vs-yolov4-tiny-97932b6ec8ec
+2. https://www.youtube.com/watch?v=SCAgktactKE
+3. https://www.youtube.com/watch?v=H3SJcwttTi4&t=23s
+4. https://medium.com/analytics-vidhya/train-a-custom-yolov4-tiny-object-detector-using-google-colab-b58be08c9593
+
+Step 1: Reading about how Yolo tackeles the problem.
+
+Research paper: https://arxiv.org/abs/2004.10934
+Explanations: https://www.youtube.com/watch?v=_JzOFWx1vZg
+
+Step 2: Selection of framework: The darknet framework has been selected and the repo has been cloned. Out of the available config files, I will be using the YoloV4 custom config file and making changes for binary classification nad number of of training steps. Classes: 2, steps: 6,000. This number is based on online search for the model. 
+
+The ideal loss value for the model in a Yolo V4 environment should be between 0.05 and 0.3. For a dataset of the selected size (1500 images) we would meed 6000 steps.
+
+Step 3: sourcing the datset: I previously attempted to create my own dataset but the labelimg software did not accept images wiht the file format on iOS. As the requiremnet of data is quite high as well, I will be taking data from available datasets on Kaggle.
+
+  Dataset source: https://www.kaggle.com/techzizou/labeled-mask-dataset-yolo-darknet
 
 
-@Time stamp 7/20 
+Step 4: For ease of access, the dataset will be mounted on cloud. As uploading such a big dataset for every instace of Colab could be a hassle(the VM has crashed due to unknown reasons multiple times in the past) it makes sense to mount the developer's Google drive for this application. The steps are quite simple and will be eexplained in the colab window or the Ipynb.
 
+Step 5: 
