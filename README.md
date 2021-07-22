@@ -90,3 +90,6 @@ The graph for YoloV4 is as following:
 ![alt text](https://github.com/sid-sangal/RealTime/blob/main/download.png?raw=true)
 
 The graph for YoloV4 tiny is as following:
+
+![alt text](https://github.com/sid-sangal/RealTime/blob/main/download(1).png?raw=true)
+
