@@ -1,0 +1,10 @@
+The dataset was sourced from an open source platform that I have used numerous time in the past called 'Kaggle"
+
+the link for the dataset is as following:
+
+https://www.kaggle.com/techzizou/labeled-mask-dataset-yolo-darknet
+
+The folder contains the annotations and the bounding box/label text flies in the format needed by Yolo.
+
+This format is different than waht Tensorflow models use which is the xml format.
+
