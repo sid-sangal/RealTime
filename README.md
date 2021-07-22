@@ -23,7 +23,7 @@ have a bias towards video walkthroughs.
 
 As an application of Computer Vision, this projec will be detecting an targeted object in a live video feed. One of the observations has been that the training in the instructions has been using very few images leading to unnderfitting.  I will be combining my project from previous semseter which was a binary classification problem on static labled data detecting the presence or absence of masks.
 
-This project uses transfer learning techniques usiing the MobileNest SSD or single shot detector.
+This project uses transfer learning techniques usiing the Yolo v4 or You Only Look Once Version 4.
 Steps:
 
 1. Downloading and labeling dataset
