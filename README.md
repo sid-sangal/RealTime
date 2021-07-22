@@ -100,3 +100,6 @@ The graph for YoloV4 tiny is as following:
 
 ![alt text](https://github.com/sid-sangal/RealTime/blob/main/tiny.png?raw=true)
 
+The accuracy for the model was observed to be "95.35%" which can be observed by calculating the mean precission accuracy of the model:
+
+![accuracy](https://user-images.githubusercontent.com/48171711/126595908-9b6a6f2f-2016-4e60-ad3c-09050eb2a148.jpg)
