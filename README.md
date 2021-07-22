@@ -77,3 +77,14 @@ Step 10: Train the model. Finally!!!! The model has been started for training an
 
 @Time stamp 6 pm. Accuracy; 90.29%
 
+@Time Stamp 10 pm: The model has been partially trained on the Yolov4 model and fully trained on the yolov4-tiny model.
+
+Results:
+
+The model trainig for the YoloV4 stopped due to google collab stopping GPU access after 4 hours of training and not assigning it back. This happens as the free version prioritizes short usages over long training. The obvious business model. Using Amazon EC2 for such applications makes more sense in terms of overall cost.
+
+The model traning for the "tiny" version took 1 hour and 17 minutes in total and it goes to show how muc hof a difference the size of the network and reduction in number of various layers (especially the convolution layers makes.)
+
+The graph for YoloV4 is as following:
+
+The graph for YoloV4 tiny is as following:
