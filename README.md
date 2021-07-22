@@ -3,7 +3,7 @@ Machinve vision project. An open source library based attempt the replication of
 Real-time object detection using Python, Tensorflow, OpenCV.
 
 
-
+The project considers availabiltity of powerful hardware (YoloV4) and mobiledeployment uisng a microcontroller(YoloV4-tiny)
 
 https://user-images.githubusercontent.com/48171711/126595660-5dd636cd-41a6-4a75-8192-51a9f2894363.mp4
 
