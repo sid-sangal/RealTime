@@ -86,5 +86,7 @@ The model trainig for the YoloV4 stopped due to google collab stopping GPU acces
 The model traning for the "tiny" version took 1 hour and 17 minutes in total and it goes to show how muc hof a difference the size of the network and reduction in number of various layers (especially the convolution layers makes.)
 
 The graph for YoloV4 is as following:
+
 ![alt text](https://github.com/sid-sangal/RealTime/blob/main/download.png?raw=true)
+
 The graph for YoloV4 tiny is as following:
